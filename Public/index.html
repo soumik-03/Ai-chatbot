@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY Bot V2</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ADD THIS: Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">🤖 MY Bot <small>(V2)</small></div>
+
+    <div id="chat-box" class="chat-box">
+      <!-- Bubbles will be injected here -->
+    </div>
+
+    <div class="chat-input">
+      <!-- Added onkeydown for "Enter to send" -->
+      <input id="user-input" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()"/>
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
